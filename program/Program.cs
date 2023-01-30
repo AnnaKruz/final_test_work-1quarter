@@ -35,7 +35,7 @@ void PrintArray(string[] array)
     }    
 }
 
-string[] weekDays = new string[] { "Sun", "Monday", "Tue", "Wed", "Thu", "Fri", "Sat" };
+string[] weekDays = new string[] { "Sun", "Monday", "Tue", "Wedday", "Thu", "Fri", "Sat" };
 int size = CheckNumber(weekDays);
 
 Console.Write("[");
