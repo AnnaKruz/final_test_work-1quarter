@@ -11,8 +11,8 @@
         }
     }
     return massiv;
-
 }
+
 int CheckNumber(string[] array)
 {
     int sum = 0;
@@ -26,6 +26,20 @@ int CheckNumber(string[] array)
     return sum;
 }
 
+void PrintArray(string[] array)
+{
+    int count = array.Length;
+    for (int i = 0; i < count; i++)
+    {
+        Console.Write($"{array[i]} ");
+    }    
+}
+
 string[] weekDays = new string[] { "Sun", "Monday", "Tue", "Wed", "Thu", "Fri", "Sat" };
 int size = CheckNumber(weekDays);
-Console.WriteLine($"[{string.Join(", " , weekDays)}] => [{string.Join(", " , CreateArray(weekDays, size))}]");
+
+Console.Write("[");
+PrintArray(weekDays);
+Console.Write("] => [");
+PrintArray(CreateArray(weekDays, size));
+Console.Write("]");
